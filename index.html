@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="撼動整合行銷有限公司提供公關活動、政府標案、商業活動及文宣印刷整合服務。">
+  <meta name="description" content="撼動整合行銷有限公司，提供公關活動、政府標案、商業活動及文宣印刷整合服務。">
+  <meta name="theme-color" content="#21466f">
   <title>撼動整合行銷有限公司｜公關活動・政府標案・商業活動・文宣印刷</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
@@ -11,7 +12,16 @@
       theme: {
         extend: {
           fontFamily: { sans: ['Noto Sans TC', 'sans-serif'] },
-          colors: { brand: { dark:'#0F172A', primary:'#1E3A8A', accent:'#F97316', light:'#F8FAFC' } }
+          colors: {
+            brand: {
+              navy: '#21466F',
+              blue: '#245A8D',
+              cyan: '#2BAED0',
+              orange: '#F29A38',
+              gold: '#F6BD45',
+              pale: '#F2F8FB'
+            }
+          }
         }
       }
     }
@@ -19,89 +29,85 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <style>
+    :root { --brand-navy:#21466F; --brand-blue:#245A8D; --brand-cyan:#2BAED0; --brand-orange:#F29A38; --brand-gold:#F6BD45; }
+    body { font-family:'Noto Sans TC',sans-serif; }
+    .hero-wash { background: radial-gradient(ellipse at 82% 18%,rgba(43,174,208,.26),transparent 34%),radial-gradient(ellipse at 95% 95%,rgba(242,154,56,.18),transparent 31%),linear-gradient(125deg,#183858 0%,#21466f 55%,#245a8d 100%); }
+    .brand-gradient { background:linear-gradient(110deg,var(--brand-cyan),var(--brand-gold),var(--brand-orange)); }
+    .text-gradient { background:linear-gradient(100deg,#59d4e5,#f7bd4c 88%); -webkit-background-clip:text; background-clip:text; color:transparent; }
+    .focus-brand:focus { outline:3px solid rgba(43,174,208,.45); outline-offset:2px; }
+  </style>
 </head>
-<body class="bg-brand-light text-slate-800 font-sans antialiased">
-<header class="fixed inset-x-0 top-0 z-50 border-b border-slate-200 bg-white/95 backdrop-blur-md">
+<body class="bg-brand-pale text-slate-800 antialiased">
+<header class="fixed inset-x-0 top-0 z-50 border-b border-slate-200/80 bg-white/95 backdrop-blur-md">
   <div class="mx-auto flex h-20 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
-    <a href="#" class="flex items-center gap-2" aria-label="回到首頁">
-      <span class="flex h-10 w-10 items-center justify-center rounded-lg bg-brand-dark text-xl font-black text-brand-accent">撼</span>
-      <span><span class="block text-xl font-black tracking-wider text-brand-dark">撼動整合行銷</span><span class="block text-[10px] font-bold tracking-widest text-slate-400">HANDONG IMC CO., LTD.</span></span>
+    <a href="#home" class="flex items-center gap-3" aria-label="撼動整合行銷首頁">
+      <span class="relative flex h-11 w-11 items-center justify-center overflow-hidden rounded-xl bg-brand-navy text-xl font-black text-white"><span class="absolute bottom-0 left-0 h-1.5 w-full brand-gradient"></span>撼</span>
+      <span><span class="block text-lg font-black tracking-wider text-brand-navy sm:text-xl">撼動整合行銷</span><span class="block text-[9px] font-bold tracking-[.13em] text-slate-500 sm:text-[10px]">HANDONG INTEGRATED MARKETING</span></span>
     </a>
     <nav class="hidden items-center gap-8 font-medium text-slate-600 md:flex" aria-label="主要導覽">
-      <a href="#about" class="hover:text-brand-accent">關於撼動</a>
-      <a href="#services" class="hover:text-brand-accent">核心服務</a>
-      <a href="#portfolio" class="hover:text-brand-accent">精選實績</a>
-      <a href="#contact" class="rounded-lg bg-brand-accent px-5 py-2.5 font-bold text-white hover:bg-orange-600">立即諮詢專案</a>
+      <a href="#about" class="transition hover:text-brand-cyan">關於撼動</a><a href="#services" class="transition hover:text-brand-cyan">核心服務</a><a href="#portfolio" class="transition hover:text-brand-cyan">精選實績</a><a href="#contact" class="rounded-lg bg-brand-navy px-5 py-2.5 font-bold text-white transition hover:bg-brand-blue">立即諮詢</a>
     </nav>
-    <a href="#contact" class="rounded-lg bg-brand-accent px-4 py-2 text-sm font-bold text-white md:hidden">立即諮詢</a>
+    <a href="#contact" class="rounded-lg bg-brand-navy px-4 py-2 text-sm font-bold text-white md:hidden">立即諮詢</a>
   </div>
 </header>
-
 <main>
-<section class="relative overflow-hidden bg-brand-dark pb-20 pt-32 text-white lg:pb-32 lg:pt-44">
-  <div class="relative mx-auto flex max-w-7xl items-center px-4 sm:px-6 lg:px-8">
-    <div class="lg:w-3/5">
-      <div class="mb-6 inline-block rounded-full border border-white/20 bg-white/10 px-4 py-1.5 text-sm font-bold text-brand-accent">公關活動 × 政府標案 × 商業推廣 × 視覺印刷</div>
-      <h1 class="mb-6 text-4xl font-black leading-tight tracking-tight sm:text-5xl lg:text-6xl">撼動人心，<br>創造品牌與城市的<span class="text-brand-accent">精采對話</span></h1>
-      <p class="mb-10 max-w-2xl text-lg leading-relaxed text-slate-300 sm:text-xl"><strong>撼動整合行銷有限公司</strong> 專注於實體活動策展、公部門專案統籌與全套文宣印刷整合。從創意發想到現場落地，為每一個專案注入精準且具感染力的執行能量。</p>
-      <div class="flex flex-col gap-4 sm:flex-row"><a href="#contact" class="rounded-xl bg-brand-accent px-8 py-4 text-center text-lg font-bold text-white hover:bg-orange-600">免費專案評估與報價</a><a href="#services" class="rounded-xl border border-white/20 bg-white/10 px-8 py-4 text-center text-lg font-bold text-white hover:bg-white/20">探索四大核心服務</a></div>
+  <section id="home" class="hero-wash relative overflow-hidden pb-20 pt-32 text-white lg:pb-32 lg:pt-44">
+    <div class="absolute -right-20 top-24 h-72 w-72 rounded-full border border-white/10 lg:h-96 lg:w-96"></div><div class="absolute -right-8 top-36 h-56 w-56 rounded-full border border-brand-cyan/20 lg:h-72 lg:w-72"></div>
+    <div class="relative mx-auto flex max-w-7xl items-center px-4 sm:px-6 lg:px-8">
+      <div class="lg:w-3/5">
+        <p class="mb-6 inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-4 py-2 text-sm font-bold"><span class="h-2 w-2 rounded-full bg-brand-gold"></span>公關活動 × 政府標案 × 商業推廣 × 視覺印刷</p>
+        <h1 class="mb-6 text-4xl font-black leading-tight tracking-tight sm:text-5xl lg:text-6xl">撼動人心，<br>創造品牌與城市的<br class="sm:hidden"><span class="text-gradient">精采對話</span></h1>
+        <p class="mb-10 max-w-2xl text-lg leading-relaxed text-blue-50/90 sm:text-xl"><strong>撼動整合行銷有限公司</strong> 專注於實體活動策展、公部門專案統籌與全套文宣印刷整合。從創意發想到現場落地，為每一個專案注入精準且具感染力的執行能量。</p>
+        <div class="flex flex-col gap-4 sm:flex-row"><a href="#contact" class="rounded-xl bg-brand-orange px-8 py-4 text-center text-lg font-bold text-white shadow-lg shadow-orange-950/20 transition hover:bg-orange-500">免費專案評估與報價</a><a href="#services" class="rounded-xl border border-white/35 bg-white/10 px-8 py-4 text-center text-lg font-bold text-white transition hover:bg-white/20">探索核心服務</a></div>
+        <div class="mt-12 flex flex-wrap gap-x-8 gap-y-3 text-sm font-medium text-blue-100"><span>✓ 一站式整合</span><span>✓ 專業活動執行</span><span>✓ 從企劃到落地</span></div>
+      </div>
+      <div class="hidden pl-10 lg:block lg:w-2/5"><div class="relative rounded-3xl border border-white/20 bg-white/10 p-3 shadow-2xl backdrop-blur-sm"><img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=1200&q=85" alt="活動舞台與現場觀眾" class="h-[420px] w-full rounded-2xl object-cover"><div class="absolute -bottom-5 -left-5 rounded-2xl bg-white p-5 text-brand-navy shadow-xl"><p class="text-xs font-bold tracking-widest text-brand-blue">ONE-STOP INTEGRATION</p><p class="mt-1 text-lg font-black">360° 專案整合執行</p><div class="mt-3 h-1.5 w-24 rounded-full brand-gradient"></div></div></div></div>
     </div>
-    <div class="hidden pl-8 lg:block lg:w-2/5"><div class="relative overflow-hidden rounded-2xl border border-white/10 shadow-2xl"><img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=1200&q=85" alt="大型活動現場" class="h-[400px] w-full object-cover"><div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-brand-dark via-brand-dark/80 to-transparent p-6"><p class="text-sm font-bold text-brand-accent">360° 全方位專案統籌</p><p class="text-lg font-bold">從前期企劃、印刷設計到現場硬體執行</p></div></div></div>
-  </div>
-</section>
+  </section>
 
-<section id="about" class="bg-white py-20">
-  <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-    <div class="mx-auto mb-16 max-w-3xl text-center"><span class="text-sm font-bold text-brand-accent">WHY CHOOSE US</span><h2 class="mb-4 mt-2 text-3xl font-black text-brand-dark sm:text-4xl">不只執行活動，更為您整合全方位影響力</h2><p class="text-lg text-slate-600">無論是嚴謹的公部門大型採購標案，或是講求話題與人潮的商業品牌活動，皆能提供一站式專業服務。</p></div>
-    <div class="grid gap-8 md:grid-cols-3">
-      <article class="rounded-2xl border border-slate-100 bg-brand-light p-8"><div class="mb-5 flex h-12 w-12 items-center justify-center rounded-xl bg-blue-100 text-xl font-black text-brand-primary">01</div><h3 class="mb-3 text-xl font-black text-brand-dark">360° 單一窗口統籌</h3><p class="text-slate-600">整合企劃、設計、印刷製作、燈光音響硬體與現場人力，跨部門溝通零落差。</p></article>
-      <article class="rounded-2xl border border-slate-100 bg-brand-light p-8"><div class="mb-5 flex h-12 w-12 items-center justify-center rounded-xl bg-orange-100 text-xl font-black text-brand-accent">02</div><h3 class="mb-3 text-xl font-black text-brand-dark">高標準標案執行力</h3><p class="text-slate-600">熟悉政府採購行政流程、履約規範與核銷作業，確保專案如期、如質、零失誤交付。</p></article>
-      <article class="rounded-2xl border border-slate-100 bg-brand-light p-8"><div class="mb-5 flex h-12 w-12 items-center justify-center rounded-xl bg-blue-100 text-xl font-black text-brand-primary">03</div><h3 class="mb-3 text-xl font-black text-brand-dark">創意美學與落地並重</h3><p class="text-slate-600">兼具吸睛的視覺設計美感與嚴密的現場動線控管，把每一分行銷預算轉化為最大聲量。</p></article>
+  <section id="about" class="bg-white py-20 lg:py-24">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8"><div class="mx-auto mb-14 max-w-3xl text-center"><span class="text-sm font-black tracking-widest text-brand-cyan">WHY HANDONG</span><h2 class="mb-4 mt-3 text-3xl font-black text-brand-navy sm:text-4xl">不只執行活動，更整合全方位影響力</h2><p class="text-lg leading-relaxed text-slate-600">以清晰企劃、細緻溝通與扎實執行，讓每個專案從想法開始，順利轉化為現場成果。</p></div>
+      <div class="grid gap-7 md:grid-cols-3">
+        <article class="rounded-2xl border border-slate-100 bg-brand-pale p-8"><div class="mb-5 flex h-12 w-12 items-center justify-center rounded-xl bg-cyan-100 text-xl font-black text-brand-blue">01</div><h3 class="mb-3 text-xl font-black text-brand-navy">360° 單一窗口統籌</h3><p class="leading-relaxed text-slate-600">整合企劃、設計、印刷製作、燈光音響硬體與現場人力，讓溝通流程更清楚有效率。</p></article>
+        <article class="rounded-2xl border border-slate-100 bg-brand-pale p-8"><div class="mb-5 flex h-12 w-12 items-center justify-center rounded-xl bg-orange-100 text-xl font-black text-brand-orange">02</div><h3 class="mb-3 text-xl font-black text-brand-navy">嚴謹細緻的專案管理</h3><p class="leading-relaxed text-slate-600">重視時程、預算、流程與品質控管，依照專案需求做好執行規劃與現場協調。</p></article>
+        <article class="rounded-2xl border border-slate-100 bg-brand-pale p-8"><div class="mb-5 flex h-12 w-12 items-center justify-center rounded-xl bg-amber-100 text-xl font-black text-amber-600">03</div><h3 class="mb-3 text-xl font-black text-brand-navy">創意美學與落地並重</h3><p class="leading-relaxed text-slate-600">兼顧視覺設計、參與體驗與現場動線，讓品牌訊息清楚呈現、專案成果確實落地。</p></article>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section id="services" class="bg-slate-100 py-20">
-  <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8"><div class="mx-auto mb-16 max-w-3xl text-center"><span class="text-sm font-bold text-brand-accent">OUR SERVICES</span><h2 class="mt-2 text-3xl font-black text-brand-dark sm:text-4xl">四大核心整合服務</h2></div>
+  <section id="services" class="bg-brand-pale py-20 lg:py-24"><div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8"><div class="mb-12 text-center"><span class="text-sm font-black tracking-widest text-brand-cyan">OUR SERVICES</span><h2 class="mt-3 text-3xl font-black text-brand-navy sm:text-4xl">四大核心整合服務</h2><p class="mt-4 text-slate-600">靈活整合資源，為不同規模與目標的專案量身規劃。</p></div>
     <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
-      <article class="rounded-2xl border-t-4 border-brand-accent bg-white p-7 shadow-sm"><span class="text-xs font-bold text-brand-accent">PR EVENTS</span><h3 class="mb-2 mt-1 text-2xl font-black text-brand-dark">公關活動策劃</h3><p class="mb-4 text-sm font-bold text-slate-500">製造市場話題，放大品牌聲量</p><ul class="space-y-2 border-t border-slate-100 pt-4 text-sm text-slate-600"><li>• 新品上市發表會 / 記者會</li><li>• 品牌開幕剪綵與造勢儀式</li><li>• 媒體邀約與 KOL 行銷</li><li>• 品牌議題與新聞稿操作</li></ul></article>
-      <article class="rounded-2xl border-t-4 border-brand-primary bg-white p-7 shadow-sm"><span class="text-xs font-bold text-brand-primary">COMMERCIAL</span><h3 class="mb-2 mt-1 text-2xl font-black text-brand-dark">商業活動執行</h3><p class="mb-4 text-sm font-bold text-slate-500">凝聚現場人潮，創造有感體驗</p><ul class="space-y-2 border-t border-slate-100 pt-4 text-sm text-slate-600"><li>• 品牌快閃店與體驗活動</li><li>• 百貨通路與商圈推廣</li><li>• 企業尾牙春酒 / 家庭日</li><li>• 主題市集與互動體驗</li></ul></article>
-      <article class="rounded-2xl border-t-4 border-brand-accent bg-white p-7 shadow-sm"><span class="text-xs font-bold text-brand-accent">GOV TENDERS</span><h3 class="mb-2 mt-1 text-2xl font-black text-brand-dark">政府標案統籌</h3><p class="mb-4 text-sm font-bold text-slate-500">嚴謹合規執行，深耕地方專案</p><ul class="space-y-2 border-t border-slate-100 pt-4 text-sm text-slate-600"><li>• 文化節慶與地方創生活動</li><li>• 政策宣導與講座論壇</li><li>• 社區推廣與觀光行銷</li><li>• 企劃書撰寫與核銷結案</li></ul></article>
-      <article class="rounded-2xl border-t-4 border-brand-primary bg-white p-7 shadow-sm"><span class="text-xs font-bold text-brand-primary">DESIGN & PRINT</span><h3 class="mb-2 mt-1 text-2xl font-black text-brand-dark">文宣設計印刷</h3><p class="mb-4 text-sm font-bold text-slate-500">統一視覺美學，延伸實體觸感</p><ul class="space-y-2 border-t border-slate-100 pt-4 text-sm text-slate-600"><li>• 活動主視覺與識別設計</li><li>• 專刊手冊、海報傳單印製</li><li>• 舞台背板、帆布與大圖輸出</li><li>• 客製化贈品與禮盒製作</li></ul></article>
+      <article class="rounded-2xl border border-slate-100 border-t-4 border-t-brand-cyan bg-white p-7 shadow-sm transition hover:-translate-y-1 hover:shadow-lg"><span class="text-xs font-black uppercase tracking-widest text-brand-cyan">PR EVENTS</span><h3 class="mb-2 mt-2 text-2xl font-black text-brand-navy">公關活動策劃</h3><p class="mb-4 text-sm font-bold text-slate-500">製造市場話題，放大品牌聲量</p><ul class="space-y-2 border-t border-slate-100 pt-4 text-sm text-slate-600"><li>• 新品發表會／記者會</li><li>• 品牌開幕與造勢活動</li><li>• 媒體邀約與體驗行銷</li><li>• 品牌議題與新聞稿規劃</li></ul></article>
+      <article class="rounded-2xl border border-slate-100 border-t-4 border-t-brand-orange bg-white p-7 shadow-sm transition hover:-translate-y-1 hover:shadow-lg"><span class="text-xs font-black uppercase tracking-widest text-brand-orange">COMMERCIAL</span><h3 class="mb-2 mt-2 text-2xl font-black text-brand-navy">商業活動執行</h3><p class="mb-4 text-sm font-bold text-slate-500">凝聚現場人潮，創造有感體驗</p><ul class="space-y-2 border-t border-slate-100 pt-4 text-sm text-slate-600"><li>• 品牌快閃與體驗活動</li><li>• 百貨通路與商圈推廣</li><li>• 企業尾牙春酒／家庭日</li><li>• 主題市集與互動體驗</li></ul></article>
+      <article class="rounded-2xl border border-slate-100 border-t-4 border-t-brand-blue bg-white p-7 shadow-sm transition hover:-translate-y-1 hover:shadow-lg"><span class="text-xs font-black uppercase tracking-widest text-brand-blue">GOVERNMENT</span><h3 class="mb-2 mt-2 text-2xl font-black text-brand-navy">政府標案統籌</h3><p class="mb-4 text-sm font-bold text-slate-500">嚴謹合規執行，深耕地方專案</p><ul class="space-y-2 border-t border-slate-100 pt-4 text-sm text-slate-600"><li>• 文化節慶與地方創生</li><li>• 政策宣導與講座論壇</li><li>• 社區推廣與觀光行銷</li><li>• 企劃書撰寫與成果結案</li></ul></article>
+      <article class="rounded-2xl border border-slate-100 border-t-4 border-t-brand-cyan bg-white p-7 shadow-sm transition hover:-translate-y-1 hover:shadow-lg"><span class="text-xs font-black uppercase tracking-widest text-brand-cyan">DESIGN & PRINT</span><h3 class="mb-2 mt-2 text-2xl font-black text-brand-navy">文宣設計印刷</h3><p class="mb-4 text-sm font-bold text-slate-500">統一視覺美學，延伸實體觸感</p><ul class="space-y-2 border-t border-slate-100 pt-4 text-sm text-slate-600"><li>• 活動主視覺與識別設計</li><li>• 專刊手冊、海報與傳單</li><li>• 舞台背板與大圖輸出</li><li>• 客製贈品與禮盒製作</li></ul></article>
     </div>
-  </div>
-</section>
+  </div></section>
 
-<section id="portfolio" class="bg-white py-20">
-  <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8"><div class="mb-12"><span class="text-sm font-bold text-brand-accent">FEATURED PROJECTS</span><h2 class="mt-2 text-3xl font-black text-brand-dark sm:text-4xl">精選專案實績</h2></div>
+  <section id="portfolio" class="bg-white py-20 lg:py-24"><div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8"><div class="mb-12"><span class="text-sm font-black tracking-widest text-brand-cyan">FEATURED PROJECTS</span><h2 class="mt-3 text-3xl font-black text-brand-navy sm:text-4xl">精選專案實績</h2><p class="mt-3 text-slate-600">每個細節都為了讓現場體驗與專案目標相互呼應。</p></div>
     <div class="grid gap-8 md:grid-cols-3">
-      <article class="group overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm"><div class="h-56 overflow-hidden"><img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=900&q=80" alt="節慶活動現場" class="h-full w-full object-cover transition group-hover:scale-105" loading="lazy"></div><div class="p-6"><p class="mb-2 text-sm font-bold text-brand-accent">節慶活動・現場執行</p><h3 class="mb-3 text-xl font-black text-brand-dark">地方節慶與品牌體驗活動</h3><p class="text-slate-600">統籌活動主題、場地規劃、流程設計、舞台硬體、動線及紀錄，打造完整參與體驗。</p></div></article>
-      <article class="group overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm"><div class="h-56 overflow-hidden"><img src="https://images.unsplash.com/photo-1559223607-a43c990c692c?auto=format&fit=crop&w=900&q=80" alt="展覽活動" class="h-full w-full object-cover transition group-hover:scale-105" loading="lazy"></div><div class="p-6"><p class="mb-2 text-sm font-bold text-brand-accent">公部門專案・整合統籌</p><h3 class="mb-3 text-xl font-black text-brand-dark">政策宣導與公共參與活動</h3><p class="text-slate-600">依專案目標規劃活動內容、宣傳素材與執行流程，協調場地、設備、人力及成果資料。</p></div></article>
-      <article class="group overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm"><div class="h-56 overflow-hidden"><img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?auto=format&fit=crop&w=900&q=80" alt="企業活動" class="h-full w-full object-cover transition group-hover:scale-105" loading="lazy"></div><div class="p-6"><p class="mb-2 text-sm font-bold text-brand-accent">企業活動・視覺印刷</p><h3 class="mb-3 text-xl font-black text-brand-dark">企業發表會與品牌推廣</h3><p class="text-slate-600">整合活動識別、主視覺、現場佈置與宣傳印刷，讓品牌訊息在各階段保持一致。</p></div></article>
-    </div>
-    <p class="mt-6 text-sm text-slate-500">※ 圖片與文案為網站範例，正式上線前請替換為已取得授權的實際專案案例。</p>
-  </div>
-</section>
+      <article class="group overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-xl"><div class="h-56 overflow-hidden"><img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=900&q=80" alt="節慶活動現場" class="h-full w-full object-cover transition duration-500 group-hover:scale-105" loading="lazy"></div><div class="p-6"><p class="mb-2 text-sm font-bold text-brand-cyan">節慶活動・現場執行</p><h3 class="mb-3 text-xl font-black text-brand-navy">地方節慶與品牌體驗活動</h3><p class="leading-relaxed text-slate-600">活動主題、場地規劃、流程設計、舞台硬體與現場動線整合，打造完整參與體驗。</p></div></article>
+      <article class="group overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-xl"><div class="h-56 overflow-hidden"><img src="https://images.unsplash.com/photo-1559223607-a43c990c692c?auto=format&fit=crop&w=900&q=80" alt="展覽與公共參與活動" class="h-full w-full object-cover transition duration-500 group-hover:scale-105" loading="lazy"></div><div class="p-6"><p class="mb-2 text-sm font-bold text-brand-orange">公部門專案・整合統籌</p><h3 class="mb-3 text-xl font-black text-brand-navy">政策宣導與公共參與活動</h3><p class="leading-relaxed text-slate-600">依專案目標規劃活動內容、宣傳素材與執行流程，協調現場資源及成果資料。</p></div></article>
+      <article class="group overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-xl"><div class="h-56 overflow-hidden"><img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?auto=format&fit=crop&w=900&q=80" alt="企業發表會會場" class="h-full w-full object-cover transition duration-500 group-hover:scale-105" loading="lazy"></div><div class="p-6"><p class="mb-2 text-sm font-bold text-brand-blue">企業活動・視覺印刷</p><h3 class="mb-3 text-xl font-black text-brand-navy">企業發表會與品牌推廣</h3><p class="leading-relaxed text-slate-600">整合活動識別、主視覺、現場佈置與宣傳印刷，保持品牌溝通一致。</p></div></article>
+    </div><p class="mt-6 text-sm text-slate-500">※ 圖片與文案為網站示意，正式公開前請替換為已取得授權的實際專案素材。</p>
+  </div></section>
 
-<section class="bg-brand-dark py-16 text-white"><div class="mx-auto flex max-w-7xl flex-col items-center justify-between gap-6 px-4 text-center sm:px-6 lg:flex-row lg:px-8 lg:text-left"><div><p class="mb-2 text-sm font-bold tracking-widest text-brand-accent">LET'S MAKE IT HAPPEN</p><h2 class="text-2xl font-black sm:text-3xl">有活動或專案構想？讓我們一起規劃。</h2><p class="mt-3 text-slate-300">從需求討論到執行細節，找到最適合您的整合方案。</p></div><a href="#contact" class="shrink-0 rounded-xl bg-brand-accent px-7 py-4 font-bold text-white hover:bg-orange-600">聯絡撼動整合行銷</a></div></section>
+  <section class="bg-brand-navy py-16 text-white"><div class="mx-auto flex max-w-7xl flex-col items-center justify-between gap-6 px-4 text-center sm:px-6 lg:flex-row lg:px-8 lg:text-left"><div><p class="mb-2 text-sm font-bold tracking-widest text-brand-gold">LET'S MAKE IT HAPPEN</p><h2 class="text-2xl font-black sm:text-3xl">有活動或專案構想？讓我們一起規劃。</h2><p class="mt-3 text-blue-100">從需求討論到執行細節，找到最適合您的整合方案。</p></div><a href="#contact" class="shrink-0 rounded-xl bg-brand-orange px-7 py-4 font-bold text-white transition hover:bg-orange-500">聯絡撼動整合行銷</a></div></section>
 
-<section id="contact" class="bg-white py-20">
-  <div class="mx-auto grid max-w-7xl gap-12 px-4 sm:px-6 lg:grid-cols-2 lg:px-8">
-    <div><span class="text-sm font-bold text-brand-accent">CONTACT US</span><h2 class="mt-2 text-3xl font-black text-brand-dark sm:text-4xl">洽詢合作與專案評估</h2><p class="mt-5 max-w-xl leading-relaxed text-slate-600">請描述您的活動類型、預計日期、地點與需求，我們將進一步了解專案方向並與您聯繫。</p><div class="mt-8 rounded-2xl bg-brand-light p-6"><h3 class="font-bold text-brand-dark">撼動整合行銷有限公司</h3><p class="mt-2 text-sm text-slate-600">公關活動策劃｜商業活動執行｜政府標案統籌｜文宣設計印刷</p><div class="mt-5 space-y-2 text-sm text-slate-600"><p>電話：請填入正式電話</p><p>電子郵件：請填入正式信箱</p><p>營業地址：請填入正式地址</p></div></div></div>
+  <section id="contact" class="bg-brand-pale py-20 lg:py-24"><div class="mx-auto grid max-w-7xl gap-12 px-4 sm:px-6 lg:grid-cols-2 lg:px-8">
+    <div><span class="text-sm font-black tracking-widest text-brand-cyan">CONTACT US</span><h2 class="mt-3 text-3xl font-black text-brand-navy sm:text-4xl">洽詢合作與專案評估</h2><p class="mt-5 max-w-xl leading-relaxed text-slate-600">請簡單描述您的活動類型、預計日期、地點與需求，我們將進一步了解專案方向並與您聯繫。</p><div class="mt-8 rounded-2xl border border-slate-100 bg-white p-6"><h3 class="font-black text-brand-navy">撼動整合行銷有限公司</h3><p class="mt-2 text-sm leading-relaxed text-slate-600">公關活動策劃｜商業活動執行｜政府標案統籌｜文宣設計印刷</p><div class="mt-4 h-1 w-20 rounded-full brand-gradient"></div><p class="mt-4 text-sm text-slate-500">電話、電子郵件及營業地址請補上公司正式資訊。</p></div></div>
     <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="space-y-5 rounded-2xl border border-slate-200 bg-white p-6 shadow-sm sm:p-8">
-      <div><label for="name" class="mb-2 block text-sm font-bold text-slate-700">姓名／公司名稱</label><input id="name" name="name" type="text" required autocomplete="name" class="w-full rounded-lg border border-slate-300 px-4 py-3" placeholder="請輸入姓名或公司名稱"></div>
-      <div class="grid gap-5 sm:grid-cols-2"><div><label for="email" class="mb-2 block text-sm font-bold text-slate-700">電子郵件</label><input id="email" name="email" type="email" required autocomplete="email" class="w-full rounded-lg border border-slate-300 px-4 py-3" placeholder="name@example.com"></div><div><label for="phone" class="mb-2 block text-sm font-bold text-slate-700">聯絡電話</label><input id="phone" name="phone" type="tel" autocomplete="tel" class="w-full rounded-lg border border-slate-300 px-4 py-3" placeholder="請輸入聯絡電話"></div></div>
-      <div><label for="service" class="mb-2 block text-sm font-bold text-slate-700">感興趣的服務</label><select id="service" name="service" class="w-full rounded-lg border border-slate-300 bg-white px-4 py-3"><option value="">請選擇服務類型</option><option>公關活動策劃</option><option>商業活動執行</option><option>政府標案統籌</option><option>文宣設計印刷</option><option>其他／尚未確定</option></select></div>
-      <div><label for="message" class="mb-2 block text-sm font-bold text-slate-700">專案需求簡述</label><textarea id="message" name="message" rows="5" required class="w-full rounded-lg border border-slate-300 px-4 py-3" placeholder="例如：活動日期、地點、預估人數或希望達成的目標"></textarea></div>
-      <label class="flex items-start gap-3 text-sm text-slate-600"><input type="checkbox" name="privacy-consent" required class="mt-1"><span>我同意撼動整合行銷使用我提供的聯絡資訊回覆本次詢問。</span></label>
-      <button type="submit" class="w-full rounded-xl bg-brand-accent px-6 py-4 font-bold text-white hover:bg-orange-600">送出專案需求</button>
-      <p class="text-xs text-slate-500">上線前請將表單 action 換成 Formspree 表單 ID 或公司後端 API。</p>
+      <div><label for="name" class="mb-2 block text-sm font-bold text-slate-700">姓名／公司名稱</label><input id="name" name="name" type="text" required autocomplete="name" class="focus-brand w-full rounded-lg border border-slate-300 px-4 py-3" placeholder="請輸入姓名或公司名稱"></div>
+      <div class="grid gap-5 sm:grid-cols-2"><div><label for="email" class="mb-2 block text-sm font-bold text-slate-700">電子郵件</label><input id="email" name="email" type="email" required autocomplete="email" class="focus-brand w-full rounded-lg border border-slate-300 px-4 py-3" placeholder="name@example.com"></div><div><label for="phone" class="mb-2 block text-sm font-bold text-slate-700">聯絡電話</label><input id="phone" name="phone" type="tel" autocomplete="tel" class="focus-brand w-full rounded-lg border border-slate-300 px-4 py-3" placeholder="請輸入聯絡電話"></div></div>
+      <div><label for="service" class="mb-2 block text-sm font-bold text-slate-700">感興趣的服務</label><select id="service" name="service" class="focus-brand w-full rounded-lg border border-slate-300 bg-white px-4 py-3"><option value="">請選擇服務類型</option><option>公關活動策劃</option><option>商業活動執行</option><option>政府標案統籌</option><option>文宣設計印刷</option><option>其他／尚未確定</option></select></div>
+      <div><label for="message" class="mb-2 block text-sm font-bold text-slate-700">專案需求簡述</label><textarea id="message" name="message" rows="5" required class="focus-brand w-full rounded-lg border border-slate-300 px-4 py-3" placeholder="例如：活動日期、地點、預估人數或希望達成的目標"></textarea></div>
+      <label class="flex items-start gap-3 text-sm leading-relaxed text-slate-600"><input type="checkbox" name="privacy-consent" required class="mt-1 accent-blue-800"><span>我同意撼動整合行銷為回覆本次詢問而使用我提供的聯絡資訊。</span></label>
+      <button type="submit" class="w-full rounded-xl bg-brand-navy px-6 py-4 font-bold text-white transition hover:bg-brand-blue">送出專案需求</button><p class="text-xs leading-relaxed text-slate-500">表單需設定 Formspree 表單 ID 或改接公司使用的後端服務後才能收件。</p>
     </form>
-  </div>
-</section>
+  </div></section>
 </main>
-
-<footer class="bg-slate-950 py-8 text-slate-400"><div class="mx-auto flex max-w-7xl flex-col items-center justify-between gap-4 px-4 text-center sm:px-6 md:flex-row md:text-left lg:px-8"><div><p class="font-bold text-white">撼動整合行銷有限公司</p><p class="mt-1 text-xs tracking-widest">HANDONG IMC CO., LTD.</p></div><p class="text-sm">© <span id="current-year"></span> 撼動整合行銷有限公司 All rights reserved.</p></div></footer>
+<footer class="bg-[#173451] py-8 text-blue-100"><div class="mx-auto flex max-w-7xl flex-col items-center justify-between gap-4 px-4 text-center sm:px-6 md:flex-row md:text-left lg:px-8"><div><p class="font-bold text-white">撼動整合行銷有限公司</p><p class="mt-1 text-xs tracking-widest text-blue-200">HANDONG INTEGRATED MARKETING CO., LTD.</p></div><p class="text-sm">© <span id="current-year"></span> 撼動整合行銷有限公司 All rights reserved.</p></div></footer>
 <script>document.getElementById('current-year').textContent = new Date().getFullYear();</script>
 </body>
 </html>
